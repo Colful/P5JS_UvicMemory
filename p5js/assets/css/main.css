@@ -1,0 +1,193 @@
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/font1.TTF);
+}
+
+body{
+    margin: 0 auto;
+    font-family: myFont;
+    background: #CC95C0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+div{
+    width: 100%;
+}
+
+h1{
+    font-size: 70px;
+    text-align: center;
+    font-style: italic;
+}
+
+h2{
+    margin-bottom: 0px;
+}
+
+.gradient{
+    background: -webkit-linear-gradient(darkblue, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient2{
+    background: -webkit-linear-gradient(deeppink, darkviolet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.column2 {
+    float: left;
+    width: 33%;
+}
+
+button{
+    height: 10%;
+    width: 40%;
+    display: block;
+    /*text-align: center;*/
+    font-size: 50%;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+.difficulty{
+    margin: 0 auto;
+    text-align: center;
+    /*display: block;*/
+}
+
+.topic{
+    margin: 0 auto;
+    text-align: center;
+    /*display: block;*/
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+button {
+    cursor: pointer;
+    position: relative;
+    padding: 2%;
+    border-radius: 3.75rem;
+    line-height: 2.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+
+    border: 1px solid #012880;
+    background-image: linear-gradient(-180deg, #FF89D6 0%, #C01F9E 100%);
+    box-shadow: 0 1rem 1.25rem 0 rgba(22,75,195,0.50),
+    0 -0.25rem 1.5rem rgba(110, 15, 155, 1) inset,
+    0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
+    0 0.25rem 0.5rem 0 rgba(180, 70, 207, 1) inset;
+}
+
+button span {
+    color: transparent;
+    background-image: linear-gradient(0deg, #EE82DA 0%, #FEFAFD 100%);
+    -webkit-background-clip: text;
+    filter: drop-shadow(0 2px 2px hsla(290, 100%, 20%, 1));
+}
+
+button::before {
+    content: "";
+    display: block;
+    height: 0.25rem;
+    position: absolute;
+    top: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 7.5rem);
+    background: #fff;
+    border-radius: 100%;
+
+    opacity: 0.7;
+    background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
+}
+
+button::after {
+    content: "";
+    display: block;
+    height: 0.25rem;
+    position: absolute;
+    bottom: 0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 7.5rem);
+    background: #fff;
+    border-radius: 100%;
+
+    filter: blur(1px);
+    opacity: 0.05;
+    background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
+}
+
+input[type=radio]:checked ~ label{
+    color: red;
+}
+
+input[type=radio]:checked ~ label::before{
+    color: black;
+}
+
+input[type=radio]:checked ~ label::after{
+    color: black;
+}
+
+.inputs1{
+    display: flex;
+}
+
+.inputs2{
+    display: flex;
+}
+
+.congrats{
+    font-size: 90px;
+    background: -webkit-linear-gradient(darkblue, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3{
+    text-align: center;
+}
+
+img{
+    margin: 0 auto;
+    display: block;
+}
+
+.imgcredit{
+    width: 80%;
+    padding: 5%;
+    padding-bottom: 0;
+    margin: 0 auto;
+}
+
+.textcolor{
+    background-image: -webkit-gradient( linear, left top, right bottom, color-stop(0, red),color-stop(0.4, black),color-stop(0.6, black), color-stop(1, red) );
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.textcolor2{
+    background-image: -webkit-gradient( linear, left top, right bottom, color-stop(0, red),color-stop(0.5, black), color-stop(1, red) );
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.desc{
+    width: auto;
+    margin-left: 20px;
+}
+
+li{
+    margin-top: 40px;
+}

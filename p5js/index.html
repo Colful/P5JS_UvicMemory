@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Uvic Memory</title>
+    <script src="assets/js/jquery-3.3.1.js"></script>
+	<script src="../Json/json.js"></script>
+    <script src="assets/js/p5.js"></script>
+    <script src="assets/js/index.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div>
+        <h1 class="gradient">Uvic Memory</h1>
+    </div>
+        <div class="column">
+            <div class="difficulty gradient">
+                <h2>Difficulty:</h2>
+                </br>
+                <div class="inputs1">
+                    <div>
+                        <input type="radio" id="Easy" class="with-gap" name="diff" value="1" checked >
+                        <label for="Easy" class="gradient2">Easy</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Dif" class="with-gap" name="diff" value="2" >
+                        <label for="Dif" class="gradient2">Difficult</label>
+                    </div>
+                </div>
+            </div>
+            <div class="topic gradient">
+                <h2>Topic:</h2>
+                </br>
+                <div class="inputs2">
+                    <div>
+                        <input type="radio" id="M" class="with-gap" name="topic" value="M" checked>
+                        <label for="M" class="gradient2">Multimedia</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="C" class="with-gap" name="topic" value="C">
+                        <label for="C" class="gradient2">C.A.F.E</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="B" class="with-gap" name="topic" value="B">
+                        <label for="B" class="gradient2">Biology</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <button onclick="play();">
+                <span>Play</span>
+            </button>
+            <button onclick="credits();">
+                <span>Credits</span>
+            </button>
+        </div>
+</body>
+</html>
