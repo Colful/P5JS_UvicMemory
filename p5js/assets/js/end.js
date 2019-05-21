@@ -27,5 +27,5 @@ $(document).ready(function() {
 });
 
 function replay() {
-    window.location.href = "../../../index.html";
+    window.location.href = "../../index.html";
 }
