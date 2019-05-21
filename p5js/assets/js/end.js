@@ -27,5 +27,5 @@ $(document).ready(function() {
 });
 
 function replay() {
-    window.location.href = "/p5js/index.html";
+    window.location.href = "P5JS_UvicMemory/p5js/";
 }
