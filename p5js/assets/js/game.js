@@ -103,7 +103,7 @@ function drawScoringMessage() {
     }
 
     if (foundAllMatches) {
-        window.location.href = "end.html/?fin=1&tries="+numTries;
+        window.location.href = "end.html?fin=1&tries="+numTries;
         // fill(0, 0, 0);
         // text("You found them all in " + numTries + " tries", 20, 360);
     }
@@ -240,7 +240,7 @@ function timers() {
     if (xCor[1]>720 || checkCollision()){
         //Ha collisionat, per tant, fi del joc.
         console.log("FIIIIIIIIN");
-        window.location.href = "end.html/?fin=0";
+        window.location.href = "end.html?fin=0";
         // alert('Hol');
     }
 }
